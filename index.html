@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta name="google-site-verification" content="ksVWLgQ0QC2SVfEH-A375OyqQ_KfTiK6mji1hivjhJ8" />
+    
+    <title>Google Drive to Embed Code Converter | Free Online Tool - Drive2Embed</title>
+    <meta name="description" content="Convert Google Drive links to embed codes instantly. Free online tool with batch conversion, preset templates, customizable dimensions, and live preview. Perfect for embedding videos, PDFs, and documents.">
+    <meta name="keywords" content="google drive embed, drive to embed, google drive iframe, embed google drive video, google drive embed code generator, iframe generator, embed code converter, batch embed converter">
+    <meta name="author" content="Drive2Embed">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://drive2embed.gt.tc/">
+    
+    <meta property="og:title" content="Google Drive to Embed Code Converter | Free Online Tool">
+    <meta property="og:description" content="Convert Google Drive links to embed codes instantly. Free tool with batch conversion, preset templates, and live preview.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drive2embed.gt.tc/">
+    <meta property="og:image" content="https://drive2embed.gt.tc/og-image.png">
+    <meta property="og:site_name" content="Drive2Embed">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Google Drive to Embed Code Converter">
+    <meta name="twitter:description" content="Convert Google Drive links to embed codes instantly. Free tool with batch conversion and preset templates.">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        
+        // Track conversion events
+        function trackEvent(action, category, label) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    'event_category': category,
+                    'event_label': label
+                });
+            }
+        }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #0ea5e9 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .input-focus:focus {
+            outline: none;
+            ring: 2px;
+            ring-color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-success:hover {
+            background: linear-gradient(135deg, #047857 0%, #059669 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #f3f4f6;
+            border-color: #d1d5db;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #f8fafc;
+        }
+        .mobile-menu {
+            display: none;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .mobile-menu.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #059669;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .notification.error {
+            background: #dc2626;
+        }
+        .notification.warning {
+            background: #f59e0b;
+        }
+        .toggle-switch {
+            position: relative;
+            width: 48px;
+            height: 24px;
+            background: #e5e7eb;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .toggle-switch.active {
+            background: #3b82f6;
+        }
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .toggle-switch.active::after {
+            transform: translateX(24px);
+        }
+        .preset-btn {
+            transition: all 0.2s ease;
+        }
+        .preset-btn:hover {
+            transform: scale(1.02);
+        }
+        .preset-btn.selected {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+        .batch-result-item {
+            animation: fadeIn 0.3s ease forwards;
+        }
+        .validation-error {
+            border-color: #ef4444 !important;
+        }
+        .validation-error:focus {
+            ring-color: #ef4444 !important;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Drive2Embed - Google Drive to Embed Code Converter",
+        "url": "https://drive2embed.gt.tc/",
+        "description": "Free online tool to convert Google Drive links into embed codes with batch conversion, preset templates, and customizable styling options.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I get the embed code from a Google Drive link?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simply paste your Google Drive sharing link into the input field, customize the dimensions and border settings if needed, and click 'Convert to Embed Code'. The tool will automatically extract the file ID and generate a ready-to-use iframe embed code."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I convert multiple Google Drive links at once?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Enable Batch Mode to convert multiple links simultaneously. Simply paste each link on a new line and click convert. You can then copy all codes or export them to a text file."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What types of files can I embed from Google Drive?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can embed videos, PDFs, documents, presentations, spreadsheets, and other file types that Google Drive supports for preview. The embed will use Google Drive's built-in preview functionality."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to change file sharing settings?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, the file must be set to 'Anyone with the link can view' in Google Drive sharing settings for the embed to work publicly. Private files will not display in the embedded iframe for unauthorized viewers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this tool free to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Drive2Embed is completely free to use. There are no limits on the number of conversions, and no registration is required."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I customize the appearance of the embedded content?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you can customize the width, height, border size, border color, and border radius of the embedded iframe. Use preset templates for common sizes or set custom dimensions."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900 min-h-screen">
+    
+    <div id="notification" class="notification">
+        <i class="fas fa-check-circle mr-2"></i>
+        <span id="notification-text">Success!</span>
+    </div>
+
+    <header class="gradient-bg shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-cloud-upload-alt text-3xl text-white mr-3"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold text-white">Drive2Embed</h1>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#generator" class="text-white hover:text-blue-200 transition duration-300 font-medium flex items-center">
+                        <i class="fas fa-code mr-2"></i>
+                        Generator
+                    </a>
+                    <a href="#guide" class="text-white hover:text-blue-200 transition duration-300 font-medium flex items-center">
+                        <i class="fas fa-book mr-2"></i>
+                        Guide
+                    </a>
+                    <a href="#faq" class="text-white hover:text-blue-200 transition duration-300 font-medium flex items-center">
+                        <i class="fas fa-question-circle mr-2"></i>
+                        FAQ
+                    </a>
+                    <a href="https://qrcode-generator.gt.tc/" target="_blank" rel="noopener" class="text-white hover:text-blue-200 transition duration-300 font-medium flex items-center">
+                        <i class="fas fa-qrcode mr-2"></i>
+                        QR Generator
+                    </a>
+                </nav>
+                
+                <button class="md:hidden text-white p-2" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-2">
+                <nav class="flex flex-col space-y-3">
+                    <a href="#generator" class="text-white hover:text-blue-200 transition duration-300 font-medium py-2 flex items-center" onclick="closeMobileMenu()">
+                        <i class="fas fa-code mr-3"></i>
+                        Generator
+                    </a>
+                    <a href="#guide" class="text-white hover:text-blue-200 transition duration-300 font-medium py-2 flex items-center" onclick="closeMobileMenu()">
+                        <i class="fas fa-book mr-3"></i>
+                        Guide
+                    </a>
+                    <a href="#faq" class="text-white hover:text-blue-200 transition duration-300 font-medium py-2 flex items-center" onclick="closeMobileMenu()">
+                        <i class="fas fa-question-circle mr-3"></i>
+                        FAQ
+                    </a>
+                    <a href="https://qrcode-generator.gt.tc/" target="_blank" rel="noopener" class="text-white hover:text-blue-200 transition duration-300 font-medium py-2 flex items-center">
+                        <i class="fas fa-qrcode mr-3"></i>
+                        QR Generator
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-12 md:py-16 bg-gradient-to-b from-blue-50 to-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 animate-fade-in">
+                    Google Drive Link to Embed Code Converter
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.1s">
+                    Transform your Google Drive sharing links into ready-to-use embed codes. 
+                    Supports batch conversion, preset templates, and custom styling.
+                </p>
+            </div>
+        </section>
+
+        <section id="generator" class="py-12 md:py-16">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="bg-white rounded-xl card-shadow p-6 md:p-8 border border-gray-100">
+                    
+                    <!-- Mode Toggle -->
+                    <div class="flex items-center justify-between mb-6 p-4 bg-gray-50 rounded-lg">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-link text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Conversion Mode</h3>
+                                <p class="text-sm text-gray-500">Toggle between single and batch conversion</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-sm font-medium text-gray-600">Single</span>
+                            <div id="batch-toggle" class="toggle-switch" onclick="toggleBatchMode()" data-testid="toggle-batch-mode"></div>
+                            <span class="text-sm font-medium text-gray-600">Batch</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Single Link Input -->
+                    <div id="single-input-section" class="mb-6">
+                        <label for="gdrive-link" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-link text-gray-400 mr-1"></i>
+                            Paste your Google Drive link:
+                        </label>
+                        <input 
+                            type="text" 
+                            id="gdrive-link" 
+                            placeholder="https://drive.google.com/file/d/FILE_ID/view?usp=sharing"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-gray-900 placeholder-gray-400"
+                            data-testid="input-gdrive-link"
+                        >
+                        <p id="single-validation-error" class="text-red-500 text-sm mt-2 hidden"></p>
+                    </div>
+                    
+                    <!-- Batch Input -->
+                    <div id="batch-input-section" class="mb-6 hidden">
+                        <label for="gdrive-links-batch" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-list text-gray-400 mr-1"></i>
+                            Paste multiple Google Drive links (one per line):
+                        </label>
+                        <textarea 
+                            id="gdrive-links-batch" 
+                            placeholder="https://drive.google.com/file/d/FILE_ID_1/view&#10;https://drive.google.com/file/d/FILE_ID_2/view&#10;https://drive.google.com/file/d/FILE_ID_3/view"
+                            class="w-full h-40 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-gray-900 placeholder-gray-400 resize-none"
+                            data-testid="textarea-batch-links"
+                        ></textarea>
+                        <p class="text-gray-500 text-sm mt-2">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            Enter each link on a new line. Maximum 50 links per batch.
+                        </p>
+                    </div>
+
+                    <!-- Preset Templates -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-3">
+                            <i class="fas fa-ruler-combined text-gray-400 mr-1"></i>
+                            Preset Dimensions:
+                        </label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <button 
+                                onclick="applyPreset('youtube')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="youtube"
+                                data-testid="preset-youtube"
+                            >
+                                <i class="fab fa-youtube text-red-500 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">YouTube</div>
+                                <div class="text-xs text-gray-500">640 x 360</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('youtube-hd')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="youtube-hd"
+                                data-testid="preset-youtube-hd"
+                            >
+                                <i class="fas fa-tv text-blue-500 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">HD Video</div>
+                                <div class="text-xs text-gray-500">1280 x 720</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('instagram')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="instagram"
+                                data-testid="preset-instagram"
+                            >
+                                <i class="fab fa-instagram text-pink-500 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">Instagram</div>
+                                <div class="text-xs text-gray-500">400 x 400</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('portrait')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="portrait"
+                                data-testid="preset-portrait"
+                            >
+                                <i class="fas fa-mobile-alt text-purple-500 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">Portrait</div>
+                                <div class="text-xs text-gray-500">360 x 640</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('facebook')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="facebook"
+                                data-testid="preset-facebook"
+                            >
+                                <i class="fab fa-facebook text-blue-600 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">Facebook</div>
+                                <div class="text-xs text-gray-500">500 x 281</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('twitter')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="twitter"
+                                data-testid="preset-twitter"
+                            >
+                                <i class="fab fa-twitter text-sky-500 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">Twitter</div>
+                                <div class="text-xs text-gray-500">512 x 288</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('pdf')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="pdf"
+                                data-testid="preset-pdf"
+                            >
+                                <i class="fas fa-file-pdf text-red-600 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">PDF/Doc</div>
+                                <div class="text-xs text-gray-500">800 x 600</div>
+                            </button>
+                            <button 
+                                onclick="applyPreset('custom')" 
+                                class="preset-btn p-3 border border-gray-200 rounded-lg text-center hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                data-preset="custom"
+                                data-testid="preset-custom"
+                            >
+                                <i class="fas fa-sliders-h text-gray-500 text-xl mb-1"></i>
+                                <div class="text-sm font-medium text-gray-700">Custom</div>
+                                <div class="text-xs text-gray-500">Set your own</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="width" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-arrows-alt-h text-gray-400 mr-1"></i>
+                                Width (px):
+                            </label>
+                            <input 
+                                type="number" 
+                                id="width" 
+                                value="640"
+                                min="100"
+                                max="1920"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+                                data-testid="input-width"
+                            >
+                        </div>
+                        <div>
+                            <label for="height" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-arrows-alt-v text-gray-400 mr-1"></i>
+                                Height (px):
+                            </label>
+                            <input 
+                                type="number" 
+                                id="height" 
+                                value="480"
+                                min="100"
+                                max="1080"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+                                data-testid="input-height"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="border-size" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-border-style text-gray-400 mr-1"></i>
+                                Border Size (px):
+                            </label>
+                            <input 
+                                type="number" 
+                                id="border-size" 
+                                value="1"
+                                min="0"
+                                max="20"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+                                data-testid="input-border-size"
+                            >
+                        </div>
+                        <div>
+                            <label for="border-color" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-palette text-gray-400 mr-1"></i>
+                                Border Color:
+                            </label>
+                            <div class="flex items-center gap-3">
+                                <input 
+                                    type="color" 
+                                    id="border-color" 
+                                    value="#e5e7eb"
+                                    class="w-14 h-12 border border-gray-300 rounded-lg cursor-pointer"
+                                    data-testid="input-border-color"
+                                >
+                                <input 
+                                    type="text" 
+                                    id="border-color-hex" 
+                                    value="#e5e7eb"
+                                    class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 uppercase"
+                                    maxlength="7"
+                                    data-testid="input-border-color-hex"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="border-radius" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-vector-square text-gray-400 mr-1"></i>
+                            Border Radius (px):
+                        </label>
+                        <input 
+                            type="number" 
+                            id="border-radius" 
+                            value="8"
+                            min="0"
+                            max="50"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+                            data-testid="input-border-radius"
+                        >
+                    </div>
+
+                    <button 
+                        onclick="convertToEmbed()" 
+                        class="w-full btn-primary text-white font-semibold py-4 px-6 rounded-lg flex items-center justify-center gap-2"
+                        data-testid="button-convert"
+                    >
+                        <i class="fas fa-magic"></i>
+                        <span id="convert-btn-text">Convert to Embed Code</span>
+                    </button>
+                </div>
+
+                <!-- Single Output Section -->
+                <div id="output-section" class="mt-8 hidden animate-fade-in">
+                    <div class="bg-white rounded-xl card-shadow p-6 md:p-8 border border-gray-100 mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mr-4">
+                                    <i class="fas fa-code text-green-600"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">Your Embed Code</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <textarea 
+                                id="embed-code" 
+                                class="w-full h-32 px-4 py-3 border border-gray-300 rounded-lg font-mono text-sm bg-gray-50 text-gray-800 resize-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                readonly
+                                data-testid="textarea-embed-code"
+                            ></textarea>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                            <button 
+                                onclick="copyEmbedCode()" 
+                                class="btn-success text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2"
+                                data-testid="button-copy"
+                            >
+                                <i class="fas fa-copy"></i>
+                                Copy Embed Code
+                            </button>
+                            <button 
+                                onclick="exportSingleCode()" 
+                                class="btn-outline text-gray-700 font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2"
+                                data-testid="button-export-single"
+                            >
+                                <i class="fas fa-download"></i>
+                                Export as TXT
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl card-shadow p-6 md:p-8 border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center mr-4">
+                                <i class="fas fa-eye text-purple-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Live Preview</h3>
+                        </div>
+                        
+                        <div id="iframe-preview" class="bg-gray-100 rounded-lg p-4 overflow-auto">
+                            <div class="flex justify-center">
+                                <iframe 
+                                    id="preview-frame" 
+                                    src="" 
+                                    width="640" 
+                                    height="480" 
+                                    class="max-w-full"
+                                    style="border: 1px solid #e5e7eb; border-radius: 8px;"
+                                    allow="autoplay"
+                                    data-testid="iframe-preview"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Batch Output Section -->
+                <div id="batch-output-section" class="mt-8 hidden animate-fade-in">
+                    <div class="bg-white rounded-xl card-shadow p-6 md:p-8 border border-gray-100">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mr-4">
+                                    <i class="fas fa-layer-group text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-800">Batch Results</h3>
+                                    <p id="batch-summary" class="text-sm text-gray-500"></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="batch-results" class="space-y-4 mb-6 max-h-96 overflow-y-auto">
+                            <!-- Batch results will be inserted here -->
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <button 
+                                onclick="copyAllBatchCodes()" 
+                                class="btn-success text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2"
+                                data-testid="button-copy-all"
+                            >
+                                <i class="fas fa-copy"></i>
+                                Copy All Codes
+                            </button>
+                            <button 
+                                onclick="exportBatchCodes()" 
+                                class="btn-secondary text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2"
+                                data-testid="button-export-batch"
+                            >
+                                <i class="fas fa-file-export"></i>
+                                Export All as TXT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guide" class="py-12 md:py-16 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-book text-blue-600 mr-2"></i>
+                        How to Use Drive2Embed
+                    </h2>
+                    <p class="text-gray-600">Follow these simple steps to embed your Google Drive content</p>
+                </div>
+                
+                <div class="grid gap-6">
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 text-lg mb-2">Get Your Google Drive Link</h4>
+                            <p class="text-gray-600">
+                                Open your file in Google Drive, click "Share", and copy the sharing link. 
+                                Make sure the file is set to "Anyone with the link can view" for public embedding.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 text-lg mb-2">Choose Mode &amp; Customize</h4>
+                            <p class="text-gray-600">
+                                Use Single mode for one link or Batch mode for multiple links. Select a preset template 
+                                or customize dimensions, borders, and styling to match your website design.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            3
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 text-lg mb-2">Generate and Preview</h4>
+                            <p class="text-gray-600">
+                                Click "Convert to Embed Code" to generate your iframe code(s). 
+                                Check the live preview to see exactly how it will appear on your website.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 card-shadow border border-gray-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            4
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 text-lg mb-2">Copy or Export</h4>
+                            <p class="text-gray-600">
+                                Copy the embed code to clipboard or export as a text file. For batch conversions, 
+                                you can copy all codes at once or export them all to a single file.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-12 md:py-16">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                        <i class="fas fa-question-circle text-blue-600 mr-2"></i>
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="text-gray-600">Find answers to common questions about embedding Google Drive content</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-1"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                How do I get the embed code from a Google Drive link?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Simply paste your Google Drive sharing link into the input field, customize the dimensions 
+                                and border settings if needed, and click "Convert to Embed Code". The tool will automatically 
+                                extract the file ID and generate a ready-to-use iframe embed code.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-2"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                Can I convert multiple Google Drive links at once?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Yes! Enable Batch Mode by clicking the toggle switch at the top of the converter. 
+                                Then paste each Google Drive link on a new line (up to 50 links). Click convert to generate 
+                                all embed codes at once. You can then copy individual codes, copy all codes, or export them to a text file.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-3"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                What types of files can I embed from Google Drive?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                You can embed videos (MP4, MOV, WebM), PDFs, Google Docs, Sheets, Slides, images, 
+                                and most file types that Google Drive supports for preview. The embed uses Google Drive's 
+                                built-in preview functionality to display your content.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-4"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                Do I need to change file sharing settings?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Yes, for the embed to work publicly, your file must be set to "Anyone with the link can view" 
+                                in Google Drive sharing settings. Private files will not display in the embedded iframe 
+                                for unauthorized viewers. You can find this option by right-clicking your file and selecting "Share".
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-5"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                Is this tool free to use?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Yes, Drive2Embed is completely free to use with no limitations. There's no registration required, 
+                                no limit on the number of conversions, and no watermarks or branding added to your embeds.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-6"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                What are the preset dimension templates?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                We offer preset templates for common use cases: YouTube (640x360), HD Video (1280x720), 
+                                Instagram (400x400 square), Portrait (360x640), Facebook (500x281), Twitter (512x288), 
+                                and PDF/Doc (800x600). Select a preset to quickly apply optimal dimensions, or choose Custom to set your own.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-7"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                Why isn't my embedded content showing?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                There are a few common reasons: 1) The file sharing is not set to public, 2) The Google Drive 
+                                link format is incorrect, 3) The file type doesn't support preview embedding, or 4) There may 
+                                be browser restrictions. Make sure your file is shared publicly and the link follows the 
+                                standard Google Drive format.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl card-shadow border border-gray-100 overflow-hidden">
+                        <button 
+                            class="w-full px-6 py-5 text-left flex items-center justify-between faq-item"
+                            onclick="toggleFaq(this)"
+                            data-testid="faq-toggle-8"
+                        >
+                            <span class="font-semibold text-gray-800 pr-4">
+                                <i class="fas fa-question-circle text-blue-500 mr-2"></i>
+                                Can I export embed codes to a file?
+                            </span>
+                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Yes! After generating your embed code(s), click the "Export as TXT" button to download 
+                                a text file containing your embed codes. For batch conversions, all codes will be saved 
+                                in a single file with clear separations between each code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-cloud-upload-alt text-2xl text-blue-400 mr-2"></i>
+                    <span class="text-xl font-bold text-white">Drive2Embed</span>
+                </div>
+                <p class="text-gray-400 mb-6">
+                    Free online tool to convert Google Drive links into embed codes.
+                    Supports batch conversion, preset templates, and export functionality.
+                </p>
+                <div class="flex justify-center gap-6 mb-6 flex-wrap">
+                    <a href="#generator" class="text-gray-400 hover:text-white transition duration-300">Generator</a>
+                    <a href="#guide" class="text-gray-400 hover:text-white transition duration-300">Guide</a>
+                    <a href="#faq" class="text-gray-400 hover:text-white transition duration-300">FAQ</a>
+                    <a href="https://qrcode-generator.gt.tc/" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition duration-300">QR Generator</a>
+                </div>
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2024 Drive2Embed. All rights reserved. 
+                        <br class="md:hidden">
+                        This tool is not affiliated with Google.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // State
+        let isBatchMode = false;
+        let batchResults = [];
+        let selectedPreset = null;
+        
+        // Preset templates
+        const presets = {
+            'youtube': { width: 640, height: 360, name: 'YouTube Standard' },
+            'youtube-hd': { width: 1280, height: 720, name: 'HD Video' },
+            'instagram': { width: 400, height: 400, name: 'Instagram Square' },
+            'portrait': { width: 360, height: 640, name: 'Portrait Video' },
+            'facebook': { width: 500, height: 281, name: 'Facebook' },
+            'twitter': { width: 512, height: 288, name: 'Twitter' },
+            'pdf': { width: 800, height: 600, name: 'PDF/Document' },
+            'custom': { width: null, height: null, name: 'Custom' }
+        };
+        
+        // Mobile menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+        
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.remove('active');
+        }
+        
+        // FAQ toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.fa-chevron-down');
+            
+            content.classList.toggle('hidden');
+            icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+        
+        // Batch mode toggle
+        function toggleBatchMode() {
+            isBatchMode = !isBatchMode;
+            const toggle = document.getElementById('batch-toggle');
+            const singleInput = document.getElementById('single-input-section');
+            const batchInput = document.getElementById('batch-input-section');
+            const convertBtnText = document.getElementById('convert-btn-text');
+            
+            toggle.classList.toggle('active', isBatchMode);
+            singleInput.classList.toggle('hidden', isBatchMode);
+            batchInput.classList.toggle('hidden', !isBatchMode);
+            
+            convertBtnText.textContent = isBatchMode ? 'Convert All Links' : 'Convert to Embed Code';
+            
+            // Hide output sections when switching modes
+            document.getElementById('output-section').classList.add('hidden');
+            document.getElementById('batch-output-section').classList.add('hidden');
+            
+            // Track event
+            trackEvent('toggle_mode', 'converter', isBatchMode ? 'batch' : 'single');
+        }
+        
+        // Apply preset
+        function applyPreset(presetKey) {
+            const preset = presets[presetKey];
+            if (!preset) return;
+            
+            // Update selected state
+            document.querySelectorAll('.preset-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            document.querySelector(`[data-preset="${presetKey}"]`).classList.add('selected');
+            selectedPreset = presetKey;
+            
+            if (presetKey !== 'custom' && preset.width && preset.height) {
+                document.getElementById('width').value = preset.width;
+                document.getElementById('height').value = preset.height;
+            }
+            
+            // Track event
+            trackEvent('select_preset', 'converter', presetKey);
+        }
+        
+        // Color picker sync
+        document.getElementById('border-color').addEventListener('input', function() {
+            document.getElementById('border-color-hex').value = this.value.toUpperCase();
+        });
+        
+        document.getElementById('border-color-hex').addEventListener('input', function() {
+            let value = this.value;
+            if (!value.startsWith('#')) {
+                value = '#' + value;
+            }
+            if (/^#[0-9A-Fa-f]{6}$/.test(value)) {
+                document.getElementById('border-color').value = value;
+            }
+        });
+        
+        // Validation
+        function validateGoogleDriveLink(link) {
+            const trimmedLink = link.trim();
+            
+            if (!trimmedLink) {
+                return { valid: false, error: 'Please enter a Google Drive link.', type: 'empty' };
+            }
+            
+            // Check if it's a URL at all
+            if (!trimmedLink.startsWith('http://') && !trimmedLink.startsWith('https://')) {
+                return { valid: false, error: 'Invalid URL format. Link must start with http:// or https://', type: 'format' };
+            }
+            
+            // Check if it's a Google Drive URL
+            if (!trimmedLink.includes('drive.google.com') && !trimmedLink.includes('docs.google.com')) {
+                return { valid: false, error: 'This doesn\'t appear to be a Google Drive link. Please use a link from drive.google.com', type: 'not_google' };
+            }
+            
+            // Try to extract file ID
+            const fileIdMatch = trimmedLink.match(/[-\w]{25,}/);
+            if (!fileIdMatch) {
+                return { valid: false, error: 'Could not find a valid file ID in this link. Make sure you\'re using a sharing link (click Share > Copy link in Google Drive)', type: 'no_file_id' };
+            }
+            
+            return { valid: true, fileId: fileIdMatch[0] };
+        }
+        
+        // Generate embed code
+        function generateEmbedCode(fileId) {
+            const width = document.getElementById('width').value;
+            const height = document.getElementById('height').value;
+            const borderSize = document.getElementById('border-size').value;
+            const borderColor = document.getElementById('border-color').value;
+            const borderRadius = document.getElementById('border-radius').value;
+            
+            const fullBorder = `${borderSize}px solid ${borderColor}`;
+            
+            return `<iframe src="https://drive.google.com/file/d/${fileId}/preview" width="${width}" height="${height}" style="border: ${fullBorder}; border-radius: ${borderRadius}px;" allow="autoplay"></iframe>`;
+        }
+        
+        // Convert function
+        function convertToEmbed() {
+            if (isBatchMode) {
+                convertBatch();
+            } else {
+                convertSingle();
+            }
+        }
+        
+        // Single conversion
+        function convertSingle() {
+            const linkInput = document.getElementById('gdrive-link');
+            const link = linkInput.value;
+            const errorElement = document.getElementById('single-validation-error');
+            
+            // Clear previous errors
+            linkInput.classList.remove('validation-error');
+            errorElement.classList.add('hidden');
+            
+            const validation = validateGoogleDriveLink(link);
+            
+            if (!validation.valid) {
+                linkInput.classList.add('validation-error');
+                errorElement.textContent = validation.error;
+                errorElement.classList.remove('hidden');
+                showNotification(validation.error, 'error');
+                return;
+            }
+            
+            const embedCode = generateEmbedCode(validation.fileId);
+            document.getElementById('embed-code').value = embedCode;
+            
+            // Update preview
+            const previewFrame = document.getElementById('preview-frame');
+            const width = document.getElementById('width').value;
+            const height = document.getElementById('height').value;
+            const borderSize = document.getElementById('border-size').value;
+            const borderColor = document.getElementById('border-color').value;
+            const borderRadius = document.getElementById('border-radius').value;
+            
+            previewFrame.src = `https://drive.google.com/file/d/${validation.fileId}/preview`;
+            previewFrame.width = width;
+            previewFrame.height = height;
+            previewFrame.style.border = `${borderSize}px solid ${borderColor}`;
+            previewFrame.style.borderRadius = borderRadius + 'px';
+            
+            // Show output
+            document.getElementById('output-section').classList.remove('hidden');
+            document.getElementById('batch-output-section').classList.add('hidden');
+            
+            setTimeout(() => {
+                document.getElementById('output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+            
+            // Track event
+            trackEvent('convert_single', 'converter', 'success');
+        }
+        
+        // Batch conversion
+        function convertBatch() {
+            const batchInput = document.getElementById('gdrive-links-batch');
+            const links = batchInput.value.split('\n').filter(link => link.trim());
+            
+            if (links.length === 0) {
+                showNotification('Please enter at least one Google Drive link.', 'error');
+                return;
+            }
+            
+            if (links.length > 50) {
+                showNotification('Maximum 50 links allowed per batch. Please reduce the number of links.', 'warning');
+                return;
+            }
+            
+            batchResults = [];
+            let successCount = 0;
+            let errorCount = 0;
+            
+            links.forEach((link, index) => {
+                const validation = validateGoogleDriveLink(link);
+                
+                if (validation.valid) {
+                    batchResults.push({
+                        index: index + 1,
+                        originalLink: link.trim(),
+                        embedCode: generateEmbedCode(validation.fileId),
+                        success: true
+                    });
+                    successCount++;
+                } else {
+                    batchResults.push({
+                        index: index + 1,
+                        originalLink: link.trim(),
+                        error: validation.error,
+                        success: false
+                    });
+                    errorCount++;
+                }
+            });
+            
+            // Update summary
+            document.getElementById('batch-summary').textContent = 
+                `${successCount} successful, ${errorCount} failed out of ${links.length} links`;
+            
+            // Render results
+            renderBatchResults();
+            
+            // Show output
+            document.getElementById('output-section').classList.add('hidden');
+            document.getElementById('batch-output-section').classList.remove('hidden');
+            
+            setTimeout(() => {
+                document.getElementById('batch-output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+            
+            // Track event
+            trackEvent('convert_batch', 'converter', `${successCount}/${links.length}`);
+        }
+        
+        // Render batch results
+        function renderBatchResults() {
+            const container = document.getElementById('batch-results');
+            container.innerHTML = '';
+            
+            batchResults.forEach((result, idx) => {
+                const div = document.createElement('div');
+                div.className = `batch-result-item p-4 rounded-lg border ${result.success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`;
+                div.style.animationDelay = `${idx * 0.05}s`;
+                
+                if (result.success) {
+                    div.innerHTML = `
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-medium text-gray-800">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                Link #${result.index}
+                            </span>
+                            <button 
+                                onclick="copySingleBatchCode(${idx})" 
+                                class="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                                data-testid="button-copy-batch-${idx}"
+                            >
+                                <i class="fas fa-copy mr-1"></i>
+                                Copy
+                            </button>
+                        </div>
+                        <textarea 
+                            class="w-full h-20 px-3 py-2 text-xs font-mono bg-white border border-green-200 rounded resize-none"
+                            readonly
+                        >${result.embedCode}</textarea>
+                    `;
+                } else {
+                    div.innerHTML = `
+                        <div class="flex items-start">
+                            <i class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"></i>
+                            <div>
+                                <span class="font-medium text-gray-800">Link #${result.index}</span>
+                                <p class="text-sm text-red-600 mt-1">${result.error}</p>
+                                <p class="text-xs text-gray-500 mt-1 break-all">${result.originalLink}</p>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                container.appendChild(div);
+            });
+        }
+        
+        // Copy single batch code
+        function copySingleBatchCode(index) {
+            const code = batchResults[index].embedCode;
+            copyToClipboard(code, 'Embed code copied!');
+        }
+        
+        // Copy all batch codes
+        function copyAllBatchCodes() {
+            const successfulCodes = batchResults
+                .filter(r => r.success)
+                .map((r, i) => `<!-- Link #${r.index} -->\n${r.embedCode}`)
+                .join('\n\n');
+            
+            if (!successfulCodes) {
+                showNotification('No successful conversions to copy.', 'error');
+                return;
+            }
+            
+            copyToClipboard(successfulCodes, 'All embed codes copied!');
+            trackEvent('copy_all_batch', 'converter', `${batchResults.filter(r => r.success).length} codes`);
+        }
+        
+        // Export single code
+        function exportSingleCode() {
+            const code = document.getElementById('embed-code').value;
+            if (!code) {
+                showNotification('No embed code to export.', 'error');
+                return;
+            }
+            
+            const content = `Drive2Embed - Embed Code Export
+Generated: ${new Date().toLocaleString()}
+========================================
+
+${code}
+
+========================================
+Generated by Drive2Embed (https://drive2embed.gt.tc/)`;
+            
+            downloadFile('embed-code.txt', content);
+            trackEvent('export_single', 'converter', 'txt');
+        }
+        
+        // Export batch codes
+        function exportBatchCodes() {
+            const successfulResults = batchResults.filter(r => r.success);
+            
+            if (successfulResults.length === 0) {
+                showNotification('No successful conversions to export.', 'error');
+                return;
+            }
+            
+            let content = `Drive2Embed - Batch Export
+Generated: ${new Date().toLocaleString()}
+Total Links: ${batchResults.length}
+Successful: ${successfulResults.length}
+Failed: ${batchResults.length - successfulResults.length}
+========================================
+
+`;
+            
+            successfulResults.forEach(result => {
+                content += `--- Link #${result.index} ---
+Original: ${result.originalLink}
+Embed Code:
+${result.embedCode}
+
+`;
+            });
+            
+            content += `========================================
+Generated by Drive2Embed (https://drive2embed.gt.tc/)`;
+            
+            downloadFile('embed-codes-batch.txt', content);
+            trackEvent('export_batch', 'converter', `${successfulResults.length} codes`);
+        }
+        
+        // Download file
+        function downloadFile(filename, content) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            showNotification('File downloaded successfully!', 'success');
+        }
+        
+        // Copy to clipboard
+        function copyToClipboard(text, successMessage) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showNotification(successMessage, 'success');
+                }).catch(() => {
+                    fallbackCopy(text, successMessage);
+                });
+            } else {
+                fallbackCopy(text, successMessage);
+            }
+        }
+        
+        function fallbackCopy(text, successMessage) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showNotification(successMessage, 'success');
+            } catch (err) {
+                showNotification('Failed to copy. Please select and copy manually.', 'error');
+            }
+            document.body.removeChild(textarea);
+        }
+        
+        // Copy embed code (single)
+        function copyEmbedCode() {
+            const embedCode = document.getElementById('embed-code').value;
+            copyToClipboard(embedCode, 'Embed code copied to clipboard!');
+            trackEvent('copy_single', 'converter', 'clipboard');
+        }
+        
+        // Show notification
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const icon = notification.querySelector('i');
+            const text = document.getElementById('notification-text');
+            
+            // Reset classes
+            notification.classList.remove('error', 'warning');
+            
+            if (type === 'error') {
+                notification.classList.add('error');
+                icon.className = 'fas fa-exclamation-circle mr-2';
+            } else if (type === 'warning') {
+                notification.classList.add('warning');
+                icon.className = 'fas fa-exclamation-triangle mr-2';
+            } else {
+                icon.className = 'fas fa-check-circle mr-2';
+            }
+            
+            text.textContent = message;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Enter key handler
+        document.getElementById('gdrive-link').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                convertToEmbed();
+            }
+        });
+        
+        // Clear preset selection when manually changing dimensions
+        document.getElementById('width').addEventListener('input', function() {
+            clearPresetSelection();
+        });
+        
+        document.getElementById('height').addEventListener('input', function() {
+            clearPresetSelection();
+        });
+        
+        function clearPresetSelection() {
+            if (selectedPreset && selectedPreset !== 'custom') {
+                document.querySelectorAll('.preset-btn').forEach(btn => {
+                    btn.classList.remove('selected');
+                });
+                document.querySelector('[data-preset="custom"]').classList.add('selected');
+                selectedPreset = 'custom';
+            }
+        }
+    </script>
+</body>
+</html>

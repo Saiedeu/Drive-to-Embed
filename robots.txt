@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Allow sitemap
+Sitemap: https://drive2embed.gt.tc/sitemap.xml
+
+# Block unnecessary system files or hidden files (safety)
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.env$
+Disallow: /*.config$
